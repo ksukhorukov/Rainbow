@@ -30,7 +30,7 @@ private
     @input ||= ARGV[1]
     @alg ||= ARGV[2]
     @out ||= ARGV[3]
-    
+
     raise 'unsupported crypto alg' unless available_alg? alg 
 
     puts "#{input} #{out} #{alg}"
@@ -49,6 +49,7 @@ private
   end 
 
   def output_file 
+    byebug
     @output_file ||= File.open(out, 'w')
   end 
 end 
