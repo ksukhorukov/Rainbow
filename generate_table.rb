@@ -13,7 +13,9 @@ class TableGenerator
 
   def usage
     if ARGV.count < 2
-      puts "#{$0} -f /path/to/file/with/pre/generated/passwords -a hashing_algorithm_eg_md5_or_sha512 -o ./output_table.txt"
+      puts "#{$0} -f /path/to/file/with/pre/generated/passwords 
+                  -a hashing_algorithm_eg_md5_or_sha512 
+                  -o ./output_table.txt"
     end
   end
 
